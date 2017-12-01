@@ -16,10 +16,10 @@ Muster werden in folgendem Format angegeben und werden auch in diesem Format bei
 Hier ein Beispiel an Mustern von 3 x 3 Feldern über 3 Generationen.
 [source, ruby]
 ----
-2;2;0;000111000$
-2;2;1;010010010$
-2;2;2;000111000$
-2;2;3;010010010$
+3;3;0;000111000$
+3;3;1;010010010$
+3;3;2;000111000$
+3;3;3;010010010$
 ----
 
 == Kategorien
@@ -101,6 +101,15 @@ expert-1, ...
 ----
 
 Ein Tag kann einfach durch das Kommando `git tag {tag}` gesetzt werden.
+
+Hierzu noch ein einfaches Beispiel:
+[source, shell]
+----
+git add .
+git commit -m "Your commit message"
+git tag junior-1
+git push
+----
 
 Vergiss nicht den Tag vor der nächsten Abgabe zu ändern!
 
