@@ -1,0 +1,146 @@
+= Advent Coding Contest 2017
+:toc:
+:toc-title:
+:toclevels: 3
+:nofooter:
+
+== Conway's Game of Life
+Als Grundlage für den ACC 2017 wird das Konzept von Conway's Spiel des Lebens <<game-of-life>>, auch Game of Life (GoL) genannt, verwendet.
+
+==== Muster
+Muster werden in folgendem Format angegeben und werden auch in diesem Format bei der Bewertung erwartet.
+[source, ruby]
+----
+{width}";"{height}";"{generation}";"{width * height * ("0" or "1")) "$")}";"
+----
+Hier ein Beispiel an Mustern von 3 x 3 Feldern über 3 Generationen.
+[source, ruby]
+----
+2;2;0;000111000$
+2;2;1;010010010$
+2;2;2;000111000$
+2;2;3;010010010$
+----
+
+== Kategorien
+Anstelle von Klassen werden dieses Jahr 3 Kategorien verwendet, Junior, Intermediate und Expert. Die ersten beiden Kategorien sind dabei nur für die Jahrgänge 1 bis 3, bzw. 1 bis 4, reserviert.
+
+|===
+| Kategorie     | Berechtigt
+
+| Junior	    | 1-3xHIT
+| Intermediate  | 1-4xHIT
+| Expert	    | 1-5xHIT
+|===
+
+== Ablauf
+Der ACC wird über den **1. bis zum 20. Dezember** durchgeführt und mit einer Siegerehrung im Rahmen der Weihnachtsfeier abgeschlossen. An jedem **Wochentag** wird dabei um **`08:00` Uhr** eine neue Aufgabe freigeschalten, deren Abgabe für den folgenden **Sonntag** um **`22:00` Uhr** vorgesehen ist.
+
+Die erste Aufgabe wird also am Freitag dem **1.** freigeschalten und ist zur Abgabe am Sonntag dem **3. Dezember** vorgesehen.
+
+An Wochenenden werden keine neuen Aufgaben veröffentlicht, jedoch können diese genutzt werden um jene der letzten Woche fertigzustellen. Eine Woche an Abgaben wird im Rahmen der ACC als **Block** bezeichnet.
+
+Der Ablauf kann also allgemein in 4 Abschnitte unterteilt werden:
+
+1. **Start**: Implementierung des GoL anhand der Vorlage
+2. **Block 1**: Einfache bis mittlere Aufgaben
+3. **Block 2**: Mittlere bis schwere Aufgabe
+4. **Finale**: Schwere Aufgaben mit Zusatzpunkten
+
+== Teilnahme
+Zur Teilnahme am ACC wird der Entwicklungsdienst GitHub <<github>> benötigt. Weitere Infos dazu finden sich unter http://acc.technologe.at/github.html.
+
+Ist ein GitHub Account eingerichtet, so kann über den Link https://classroom.github.com/a/0r-oHU08 ein Repository eröffnet werden, auf welchem dann die weitere Entwicklung stattfindet. Ab diesem Zeitpunkt nimmst du offiziell am Wettbewerb teil. :)
+
+Die Aufgabenstellung findet sich jeweils im Unterordner {kategorie}/{aufgabe} als `README.adoc`. Zusätzlich kann die Liste der Aufgabenstellungen auch über http://acc.technologe.at/aufgaben.html abgerufen werden.
+
+=== Sprachen
+Zur Entwicklung sind die Sprachen Java und Python vorgesehen.
+|===
+| Sprache   | Builds
+
+| Java      | Gradle <<gradle>>
+| Python    | PyBuilder <<pybuilder>>
+|===
+
+Die Build Tools sind dabei wie folgt zu verwenden:
+
+==== Java (Gradle)
+[source, shell]
+----
+# Build game of life with values
+# gradle gol -Pfile={output file} -Ppattern={pattern} -Pstart={start generation} -Pend={end generation}
+gradle gol -Pfile=output.csv -Ppattern="3;3;0;000111000$" -Pstart=0 -Pend=50
+# Run tests on the game
+gradle test
+# Generate documentation
+gradle javadoc
+----
+
+==== Python (PyBuilder)
+[source, shell]
+----
+# Setup a virtual environment (recommended)
+virtualenv venv
+source venv/bin/activate
+# Install PyBuilder
+pip install pybuilder
+# Buld game of life with default values
+pyb
+----
+
+=== Abgabe
+Um eine Version abzugeben muss das Projekt vor dem nächsten `push` mit einem `tag` <<git-tag>> versehen werden. Dieser wird zur Identifikation der Abgabe verwendet und muss dem folgenden Format entsprechen.
+[source, ruby]
+----
+{kategorie}-{aufgabe}
+# Beispiele:
+junior-1, junior-2, junior-3, ...
+intermediate-1, ...
+expert-1, ...
+----
+
+Ein Tag kann einfach durch das Kommando `git tag {tag}` gesetzt werden.
+
+Vergiss nicht den Tag vor der nächsten Abgabe zu ändern!
+
+== Bewertung
+=== Funktion
+Die Funktion einer Aufgabe sollte immer unabhängig aber in Einklang von und mit jenen der Vorangegangenen sein. Die Funktionalität einer Abgabe wird anhand der Basis-Implementierung getestet und bringt bei Erfolg `+5` Punkte für den/die Teilnehmer/in.
+
+=== Zeitraum
+Die Abgaben der Aufgaben sind für den jeweiligen Block vorgesehen. Eine Abgabe innerhalb des Blocks bringt bei Erfolg `+1` Punkt für die Teilnehmer/innen.
+
+Eine Ausnahme bildet das Finale, welches die letzte Woche bis zum 20. Dezember beinhaltet. In diesem Zeitraum ist jeden Tag eine Aufgabe zwischen `08:00` und `22:00` Uhr abzugeben. Diese Aufgaben bringen bei Erfolg `+2` Punkte für den/die Teilnehmer/in.
+
+=== Ranking
+Aufgaben sind grunsätzlich nach der Erfüllung der Anforderung(en) zu bewerten. Zusätzlich werden Abgaben der Teilnehmer/innen nach mehreren Kriterien gereiht.
+|===
+| Reihung	        	| Gleichstand
+
+| Performance <<1>>     | Dokumentation
+| Generationen    		| Kreativität
+| Dateigröße        	|
+| Code Qualität     	|
+|===
+
+Kriterien werden zur Reihung von Abgaben verwendet, je nach Reihung kann ein Teilnehmer Bonuspunkte für die jeweilige Aufgabe erhalten.
+|===
+| 1. Platz  | 2. Platz  | 3. Platz
+
+| `+3`      | `+2`      | `+1`
+|===
+
+== Weitere Informationen
+Es kann im Laufe des Wettbewerbs weiterhin zu Änderungen an den Repositories und den Inhalten dieses Dokuments kommen. Diese sind stark vom Feedback an den ersten Tagen abhängig.
+
+'''
+
+[bibliography]
+== Referenzen
+* [1] Zur Bestimmung der Performance unter Verwendung verschiedener Sprachen muss die Abgabe nativ kompiliert werden.
+* [game-of-life] Wikipedia. Conways Spiel des Lebens. 2017. https://wiki.sh/gol.
+* [gradle] Gradle. https://gradle.org.
+* [pybuilder] PyBuilder. http://pybuilder.github.io.
+* [github] GitHub. https://github.com.
+* [git-tags] Git SCM. Git Tagging. https://git-scm.com/book/en/v2/Git-Basics-Tagging.

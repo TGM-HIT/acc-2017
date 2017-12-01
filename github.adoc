@@ -1,0 +1,19 @@
+:nofooter:
+
+== GitHub
+Zur Teilnahme am ACC wird der Entwicklungsdienst GitHub <<github>> benötigt.
+Zur Registrierung besuche die Seite https://github.com/join und wähle einen Benutzernamen, ein Passwort und eine E-Mail Adresse.
+
+* Der Benutzername soll den ersten Buchstaben deines Vornamens, sowie deinen Nachnamen beinhalten und auf `-tgm` enden.
+** Beispiel: `vnachname-tgm`
+
+* Um alle Funktionen des Dienstes kostenlos nutzen zu können muss die E-Mail Adresse des Tgm verwendet werden.
+** Beispiel: `vnachname@student.tgm.ac.at`
+
+=== Git
+GitHub bietet zudem eine einfache Anleitung zur Verwendung von Git unter https://try.github.io.
+Alternativ bietet auch Codeacademy eine Einführung unter https://www.codecademy.com/learn/learn-git.
+
+[bibliography]
+== Referenzen
+* [github] GitHub. https://github.com.

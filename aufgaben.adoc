@@ -1,0 +1,10 @@
+:nofooter:
+
+== Aufgaben
+
+[cols="1, 5, 5, 5"]
+|===
+|		| Junior | Intermediate | Expert
+
+| 01 	| http://acc.technologe.at/junior/01[Game of Life] | http://acc.technologe.at/intermediate/01[Game of Life] | http://acc.technologe.at/expert/01[Game of Life]
+|===
