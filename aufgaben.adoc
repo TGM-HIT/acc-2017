@@ -7,4 +7,5 @@
 |		| Junior | Intermediate | Expert
 
 | 01 	| http://acc.technologe.at/junior/01[Game of Life] | http://acc.technologe.at/intermediate/01[Game of Life] | http://acc.technologe.at/expert/01[Game of Life]
+| 02 	| http://acc.technologe.at/junior/02[Game of Life] | http://acc.technologe.at/intermediate/02[Game of Life] | http://acc.technologe.at/expert/02[Game of Life]
 |===

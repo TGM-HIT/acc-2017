@@ -66,6 +66,8 @@ Zur Entwicklung sind die Sprachen Java und Python vorgesehen.
 Die Build Tools sind dabei wie folgt zu verwenden:
 
 ==== Java (Gradle)
+Zum Build wird die Software Gradle benötigt, welche unter https://gradle.org zu finden ist.
+
 [source, shell]
 ----
 # Build game of life with values
@@ -78,6 +80,8 @@ gradle javadoc
 ----
 
 ==== Python (PyBuilder)
+Zur Installation wird eine virtuelle Python Umgebung (venv) empfohlen.
+
 [source, shell]
 ----
 # Setup a virtual environment (recommended)
@@ -87,6 +91,21 @@ source venv/bin/activate
 pip install pybuilder
 # Buld game of life with default values
 pyb
+----
+
+==== C# (.NET Core)
+Zur Entwicklung wird .NET Core benötigt, welches unter https://www.microsoft.com/net/core zu finden ist.
+
+[source, shell]
+----
+# Clear NuGet packages
+dotnet restore
+# Build
+dotnet build csharp.csproj
+# Run the application
+dotnet run csharp.csproj
+# Run tests
+dotnet test csharp.csproj
 ----
 
 === Abgabe
