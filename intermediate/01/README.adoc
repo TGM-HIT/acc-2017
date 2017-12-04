@@ -16,6 +16,7 @@ Um für die nächste Generation eine Veränderung hervorzubringen, muss das Spie
 Das Muster der Folgegeneration wird dabei für alle Zellen gleichzeitig berechnet, wobei der Zustand einer Zelle in der nächsten Generation vom aktuellen Zustand der Zelle selbst und den aktuellen Zuständen ihrer acht Nachbarzellen abhängt.
 
 Als erste Aufgabe soll eine der Grundregeln implementiert werden
+
 * Eine tote Zelle mit genau drei lebenden Nachbarn wird in der Folgegeneration ins **Leben** gerufen.
 
 ==== Muster
