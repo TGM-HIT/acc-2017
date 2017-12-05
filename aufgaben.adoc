@@ -6,6 +6,7 @@
 |===
 |		| Junior | Intermediate | Expert
 
-| 01 	| http://acc.technologe.at/junior/01[Game of Life] | http://acc.technologe.at/intermediate/01[Game of Life] | http://acc.technologe.at/expert/01[Game of Life]
-| 02 	| http://acc.technologe.at/junior/02[Game of Life] | http://acc.technologe.at/intermediate/02[Game of Life] | http://acc.technologe.at/expert/02[Game of Life]
+| 01 	| http://acc.technologe.at/junior/01[Leben] | http://acc.technologe.at/intermediate/01[Leben] | http://acc.technologe.at/expert/01[Leben]
+| 02 	| http://acc.technologe.at/junior/02[Einsamkeit] | http://acc.technologe.at/intermediate/02[Einsamkeit] | http://acc.technologe.at/expert/02[Einsamkeit]
+| 03 	| http://acc.technologe.at/junior/03[Überbevölkerung] | http://acc.technologe.at/intermediate/03[Überbevölkerung] | http://acc.technologe.at/expert/03[Überbevölkerung]
 |===
