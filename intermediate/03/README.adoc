@@ -1,0 +1,36 @@
+= Advent Coding Contest 2017
+:toc:
+:toc-title:
+:toclevels: 3
+:nofooter:
+
+== Aufgabe 3 - Überbevölkerung
+In den ersten beiden Aufgaben wurde eine Variante von Conway's Spiel des Lebens <<game-of-life>>, auf Basis der bereitgestellten Schnittstelle, mit zwei grundlegenden Regel entwickelt.
+
+Die nächste Aufgabe besteht nun darin auch die dritte Grundregel des GoL zu implementieren.
+
+* Eine lebende Zelle mit mehr als drei lebenden Nachbarn stirbt in der Folgegeneration an **Überbevölkerung**.
+
+Zur Berechnung der Folgegeneration werden standardmäßig alle drei Regeln verwendet.
+Regeln können über die vorgegebenen Methoden aktiviert oder deaktiviert werden.
+
+=== Muster
+Muster aus Zellen werden in folgendem Format angegeben und auch in diesem Format bei der Bewertung erwartet.
+[source, ruby]
+----
+{width}";"{height}";"{generation}";"{width * height * ("0" or "1")) "$")}";"
+----
+Hier ein Beispiel an Mustern von 6 x 6 Feldern über 3 Generationen.
+[source, ruby]
+----
+6;6;0;000001111001000001$
+6;6;1;010000010001010000$
+6;6;2;000000111000000000$
+6;6;3;010000010000010000$
+----
+
+'''
+
+[bibliography]
+== Referenzen
+* [game-of-life] Wikipedia. Conways Spiel des Lebens. 2017. https://wiki.sh/gol.
