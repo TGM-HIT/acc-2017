@@ -1,0 +1,26 @@
+= Advent Coding Contest 2017
+:toc:
+:toc-title:
+:toclevels: 3
+:nofooter:
+
+== Aufgabe 4 - Selektion von Regeln
+In den ersten drei Aufgaben wurde eine Variante von Conway's Spiel des Lebens <<game-of-life>>, auf Basis der bereitgestellten Schnittstelle, mit ihren drei grundlegenden Regeln entwickelt.
+
+Die nächste Aufgabe besteht nun darin einzelne Regeln über die Methode `GameOfLife.addRule()` zu aktivieren, oder mittels `GameOfLife.removeRule()` zu deaktivieren. Nach diesem Prinzip soll es möglich die Methoden mit folgenden Paramtern zu nutzen.
+
+|===
+| Parameter | Resultat
+|
+| "Leben" | (De)Aktiviert Regel 1 - "Leben"
+| "Einsamkeit" (De)Aktiviert Regel 2 - "Einsamkeit"
+| "Überbevolkerung" (De)Aktiviert Regel 3 - "Überbevölkerung"
+|===
+
+Zur Berechnung der Folgegeneration werden alle aktivierten Regeln verwendet!
+
+'''
+
+[bibliography]
+== Referenzen
+* [game-of-life] Wikipedia. Conways Spiel des Lebens. 2017. https://wiki.sh/gol.
