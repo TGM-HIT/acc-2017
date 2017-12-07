@@ -9,4 +9,6 @@
 | 01 	| http://acc.technologe.at/junior/01[Leben] | http://acc.technologe.at/intermediate/01[Leben] | http://acc.technologe.at/expert/01[Leben]
 | 02 	| http://acc.technologe.at/junior/02[Einsamkeit] | http://acc.technologe.at/intermediate/02[Einsamkeit] | http://acc.technologe.at/expert/02[Einsamkeit]
 | 03 	| http://acc.technologe.at/junior/03[Überbevölkerung] | http://acc.technologe.at/intermediate/03[Überbevölkerung] | http://acc.technologe.at/expert/03[Überbevölkerung]
+| 04 	| http://acc.technologe.at/junior/04[Selektieren von Regeln] | http://acc.technologe.at/intermediate/04[Reversion] | http://acc.technologe.at/expert/04[Reversion]
+| 05 	| http://acc.technologe.at/junior/05[Überleben] | http://acc.technologe.at/intermediate/05[Überleben] | http://acc.technologe.at/expert/05[Überleben]
 |===
