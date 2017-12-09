@@ -54,60 +54,6 @@ Ist ein GitHub Account eingerichtet, so kann über den Link https://classroom.gi
 
 Die Aufgabenstellung findet sich jeweils im Unterordner {kategorie}/{aufgabe} als `README.adoc`. Zusätzlich kann die Liste der Aufgabenstellungen auch über http://acc.technologe.at/aufgaben.html abgerufen werden.
 
-=== Sprachen
-Zur Entwicklung sind die Sprachen Java und Python vorgesehen.
-|===
-| Sprache   | Builds
-
-| Java      | Gradle <<gradle>>
-| Python    | PyBuilder <<pybuilder>>
-|===
-
-Die Build Tools sind dabei wie folgt zu verwenden:
-
-==== Java (Gradle)
-Zum Build wird die Software Gradle benötigt, welche unter https://gradle.org zu finden ist.
-
-[source, shell]
-----
-# Build game of life with values
-# gradle gol -Pfile={output file} -Ppattern={pattern} -Pstart={start generation} -Pend={end generation}
-gradle gol -Pfile=output.csv -Ppattern="3;3;0;000111000$" -Pstart=0 -Pend=50
-# Run tests on the game
-gradle test
-# Generate documentation
-gradle javadoc
-----
-
-==== Python (PyBuilder)
-Zur Installation wird eine virtuelle Python Umgebung (venv) empfohlen.
-
-[source, shell]
-----
-# Setup a virtual environment (recommended)
-virtualenv venv
-source venv/bin/activate
-# Install PyBuilder
-pip install pybuilder
-# Buld game of life with default values
-pyb
-----
-
-==== C# (.NET Core)
-Zur Entwicklung wird .NET Core benötigt, welches unter https://www.microsoft.com/net/core zu finden ist.
-
-[source, shell]
-----
-# Clear NuGet packages
-dotnet restore
-# Build
-dotnet build csharp.csproj
-# Run the application
-dotnet run csharp.csproj
-# Run tests
-dotnet test csharp.csproj
-----
-
 === Abgabe
 Um eine Version abzugeben muss das Projekt vor dem nächsten `push` mit einem `tag` <<git-tag>> versehen werden. Dieser wird zur Identifikation der Abgabe verwendet und muss dem folgenden Format entsprechen.
 [source, ruby]
@@ -127,7 +73,7 @@ Hierzu noch ein einfaches Beispiel:
 git add .
 git commit -m "Your commit message"
 git tag junior-1
-git push
+git push --tags
 ----
 
 Vergiss nicht den Tag vor der nächsten Abgabe zu ändern!
@@ -158,6 +104,60 @@ Kriterien werden zur Reihung von Abgaben verwendet, je nach Reihung kann ein Tei
 
 | `+3`      | `+2`      | `+1`
 |===
+
+== Sprachen
+Zur Entwicklung sind die Sprachen Java und Python vorgesehen.
+|===
+| Sprache   | Builds
+
+| Java      | Gradle <<gradle>>
+| Python    | PyBuilder <<pybuilder>>
+|===
+
+Wenn Build Tools verwendet werden sollen dabei die beigelegten im `base` Verzeichnis zu verwenden:
+
+=== Java (Gradle)
+Zum Build wird die Software Gradle benötigt, welche unter https://gradle.org zu finden ist.
+
+[source, shell]
+----
+# Build game of life with values
+# gradle gol -Pfile={output file} -Ppattern={pattern} -Pstart={start generation} -Pend={end generation}
+gradle gol -Pfile=output.csv -Ppattern="3;3;0;000111000$" -Pstart=0 -Pend=50
+# Run tests on the game
+gradle test
+# Generate documentation
+gradle javadoc
+----
+
+=== Python (PyBuilder)
+Zur Installation wird eine virtuelle Python Umgebung (venv) empfohlen.
+
+[source, shell]
+----
+# Setup a virtual environment (recommended)
+virtualenv venv
+source venv/bin/activate
+# Install PyBuilder
+pip install pybuilder
+# Buld game of life with default values
+pyb
+----
+
+=== C# (.NET Core)
+Zur Entwicklung wird .NET Core benötigt, welches unter https://www.microsoft.com/net/core zu finden ist.
+
+[source, shell]
+----
+# Clear NuGet packages
+dotnet restore
+# Build
+dotnet build csharp.csproj
+# Run the application
+dotnet run csharp.csproj
+# Run tests
+dotnet test csharp.csproj
+----
 
 == Weitere Informationen
 Es kann im Laufe des Wettbewerbs weiterhin zu Änderungen an den Repositories und den Inhalten dieses Dokuments kommen. Diese sind stark vom Feedback an den ersten Tagen abhängig.
