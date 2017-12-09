@@ -4,25 +4,14 @@
 :toclevels: 3
 :nofooter:
 
-== Conway's Game of Life
-Als Grundlage für den ACC 2017 wird das Konzept von Conway's Spiel des Lebens <<game-of-life>>, auch Game of Life (GoL) genannt, verwendet.
+== Teilnahme
+Zur Teilnahme am ACC wird der Entwicklungsdienst GitHub <<github>> benötigt. Weitere Infos dazu finden sich unter http://acc.technologe.at/github.html.
 
-==== Muster
-Muster werden in folgendem Format angegeben und werden auch in diesem Format bei der Bewertung erwartet.
-[source, ruby]
-----
-{width}";"{height}";"{generation}";"{width * height * ("0" or "1")) "$")}";"
-----
-Hier ein Beispiel an Mustern von 3 x 3 Feldern über 3 Generationen.
-[source, ruby]
-----
-3;3;0;000111000$
-3;3;1;010010010$
-3;3;2;000111000$
-3;3;3;010010010$
-----
+Ist ein GitHub Account eingerichtet, so kann über den Link https://classroom.github.com/a/0r-oHU08 ein Repository eröffnet werden, auf welchem dann die weitere Entwicklung stattfindet. Ab diesem Zeitpunkt nimmst du offiziell am Wettbewerb teil. :)
 
-== Kategorien
+Die Aufgabenstellung findet sich jeweils im Unterordner {kategorie}/{aufgabe} als `README.adoc`. Zusätzlich kann die Liste der Aufgabenstellungen auch über http://acc.technologe.at/aufgaben.html abgerufen werden.
+
+=== Kategorien
 Anstelle von Klassen werden dieses Jahr 3 Kategorien verwendet, Junior, Intermediate und Expert. Die ersten beiden Kategorien sind dabei nur für die Jahrgänge 1 bis 3, bzw. 1 bis 4, reserviert.
 
 |===
@@ -32,27 +21,6 @@ Anstelle von Klassen werden dieses Jahr 3 Kategorien verwendet, Junior, Intermed
 | Intermediate  | 1-4xHIT
 | Expert	    | 1-5xHIT
 |===
-
-== Ablauf
-Der ACC wird über den **1. bis zum 20. Dezember** durchgeführt und mit einer Siegerehrung im Rahmen der Weihnachtsfeier abgeschlossen. An jedem **Wochentag** wird dabei um **`08:00` Uhr** eine neue Aufgabe freigeschalten, deren Abgabe für den folgenden **Sonntag** um **`22:00` Uhr** vorgesehen ist.
-
-Die erste Aufgabe wird also am Freitag dem **1.** freigeschalten und ist zur Abgabe am Sonntag dem **3. Dezember** vorgesehen.
-
-An Wochenenden werden keine neuen Aufgaben veröffentlicht, jedoch können diese genutzt werden um jene der letzten Woche fertigzustellen. Eine Woche an Abgaben wird im Rahmen der ACC als **Block** bezeichnet.
-
-Der Ablauf kann also allgemein in 4 Abschnitte unterteilt werden:
-
-1. **Start**: Implementierung des GoL anhand der Vorlage
-2. **Block 1**: Einfache bis mittlere Aufgaben
-3. **Block 2**: Mittlere bis schwere Aufgabe
-4. **Finale**: Schwere Aufgaben mit Zusatzpunkten
-
-== Teilnahme
-Zur Teilnahme am ACC wird der Entwicklungsdienst GitHub <<github>> benötigt. Weitere Infos dazu finden sich unter http://acc.technologe.at/github.html.
-
-Ist ein GitHub Account eingerichtet, so kann über den Link https://classroom.github.com/a/0r-oHU08 ein Repository eröffnet werden, auf welchem dann die weitere Entwicklung stattfindet. Ab diesem Zeitpunkt nimmst du offiziell am Wettbewerb teil. :)
-
-Die Aufgabenstellung findet sich jeweils im Unterordner {kategorie}/{aufgabe} als `README.adoc`. Zusätzlich kann die Liste der Aufgabenstellungen auch über http://acc.technologe.at/aufgaben.html abgerufen werden.
 
 === Abgabe
 Um eine Version abzugeben muss das Projekt vor dem nächsten `push` mit einem `tag` <<git-tag>> versehen werden. Dieser wird zur Identifikation der Abgabe verwendet und muss dem folgenden Format entsprechen.
@@ -77,6 +45,38 @@ git push --tags
 ----
 
 Vergiss nicht den Tag vor der nächsten Abgabe zu ändern!
+
+== Conway's Game of Life
+Als Grundlage für den ACC 2017 wird das Konzept von Conway's Spiel des Lebens <<game-of-life>>, auch Game of Life (GoL) genannt, verwendet.
+
+==== Muster
+Muster werden in folgendem Format angegeben und werden auch in diesem Format bei der Bewertung erwartet.
+[source, ruby]
+----
+{width}";"{height}";"{generation}";"{width * height * ("0" or "1")) "$")}";"
+----
+Hier ein Beispiel an Mustern von 3 x 3 Feldern über 3 Generationen.
+[source, ruby]
+----
+3;3;0;000111000$
+3;3;1;010010010$
+3;3;2;000111000$
+3;3;3;010010010$
+----
+
+== Ablauf
+Der ACC wird über den **1. bis zum 20. Dezember** durchgeführt und mit einer Siegerehrung im Rahmen der Weihnachtsfeier abgeschlossen. An jedem **Wochentag** wird dabei um **`08:00` Uhr** eine neue Aufgabe freigeschalten, deren Abgabe für den folgenden **Sonntag** um **`22:00` Uhr** vorgesehen ist.
+
+Die erste Aufgabe wird also am Freitag dem **1.** freigeschalten und ist zur Abgabe am Sonntag dem **3. Dezember** vorgesehen.
+
+An Wochenenden werden keine neuen Aufgaben veröffentlicht, jedoch können diese genutzt werden um jene der letzten Woche fertigzustellen. Eine Woche an Abgaben wird im Rahmen der ACC als **Block** bezeichnet.
+
+Der Ablauf kann also allgemein in 4 Abschnitte unterteilt werden:
+
+1. **Start**: Implementierung des GoL anhand der Vorlage
+2. **Block 1**: Einfache bis mittlere Aufgaben
+3. **Block 2**: Mittlere bis schwere Aufgabe
+4. **Finale**: Schwere Aufgaben mit Zusatzpunkten
 
 == Bewertung
 === Funktion
