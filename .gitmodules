@@ -1,0 +1,3 @@
+[submodule "tasks"]
+	path = tasks
+	url = git@github.com:TGM-HIT/acc-2017-tasks.git
