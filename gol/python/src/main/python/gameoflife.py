@@ -3,6 +3,7 @@
 :version 2017-12-01
 """
 
+
 import argparse
 
 
@@ -106,6 +107,13 @@ class GameOfLife:
             while self.__generation < end:
                 file.write(self.get_next_pattern())
                 self.__generation += 1
+
+
+    def get_objects(self) -> str:
+        """
+        List objects in the following format: object;{instances}$object;{instances}
+        """
+        pass
 
 
 def main():

@@ -155,5 +155,13 @@ namespace csharp.main.csharp
                 Console.WriteLine(e);
             }
         }
+
+        /// <summary>
+        ///     List objects in the following format.
+        ///     * <code>object;{instances}$object;{instances}</code>
+        /// </summary>
+        public string GetObjects() {
+            return ""
+        }        
     }
 }

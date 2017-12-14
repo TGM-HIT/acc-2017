@@ -158,6 +158,15 @@ public class GameOfLife {
 		}
 	}
 
+
+	/**
+	 * List objects in the following format.
+     * object;{instances}$object;{instances}
+	 */
+	public String getObjects() {
+		return ""
+	}
+
 	/**
 	 * Check your functionality with this main method.
 	 * 
