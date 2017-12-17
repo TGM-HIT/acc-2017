@@ -1,6 +1,6 @@
 """
-:author Markus Reichl
-:version 2017-12-01
+:author Markus Re1
+:version 2017-12-17 20:30:00 UTC+1
 """
 
 
@@ -116,34 +116,9 @@ class GameOfLife:
         pass
 
 
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("-p", "--pattern",type=str,
-                        help="Game-Of-Life pattern (e.g. '4;4;0;1011101010101001$')",
-                        required=False)
-    parser.add_argument("-f", "--filename",type=str,
-                        help="Filename for generation output.",
-                        required=False)
-    parser.add_argument("-s", "--start",type=int,
-                        help="Start of generation output.",
-                        required=False)
-    parser.add_argument("-e", "--end", type=int,
-                        help="End of generation output.",
-                        required=False)
-    args = parser.parse_args()
-
-    pattern = "2;2;0;0001$"
-    if args.pattern is not None: pattern = args.pattern
-    filename = "output.csv"
-    if args.filename is not None: filename = args.filename
-    start = 0
-    if args.start is not None: start = args.start
-    end = 3
-    if args.end is not None: end = args.end
-
-    gol = GameOfLife(pattern)
-    gol.export_generations(start, end, filename)
-
-
 if __name__ == "__main__":
-    main()
+    gol = GameOfLife(pattern)
+    gol.get_next_pattern()
+    gol.get_next_pattern()
+    gol.get_next_pattern()
+    gol.get_pattern(3)
