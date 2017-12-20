@@ -11,4 +11,9 @@
 | 03 	| http://acc.technologe.at/junior/03[Überbevölkerung] | http://acc.technologe.at/intermediate/03[Überbevölkerung] | http://acc.technologe.at/expert/03[Überbevölkerung]
 | 04 	| http://acc.technologe.at/junior/04[Selektieren von Regeln] | http://acc.technologe.at/intermediate/04[Reversion] | http://acc.technologe.at/expert/04[Reversion]
 | 05 	| http://acc.technologe.at/junior/05[Überleben] | http://acc.technologe.at/intermediate/05[Überleben] | http://acc.technologe.at/expert/05[Überleben]
+| 06 	| http://acc.technologe.at/junior/06[Statische Objekte] | http://acc.technologe.at/intermediate/06[Oszillierende Objekte] | http://acc.technologe.at/expert/06[Raumschiffe]
+| 07 	| http://acc.technologe.at/junior/07[Stichproben] | http://acc.technologe.at/intermediate/07[Fluktuation] | http://acc.technologe.at/expert/07[Kollaps]
+| 08 	| http://acc.technologe.at/junior/08[Skalierung] | http://acc.technologe.at/intermediate/08[Automatische Skalierung] | http://acc.technologe.at/expert/08[Torus]
+| 09 	| http://acc.technologe.at/junior/09[Hexagonal] | http://acc.technologe.at/intermediate/09[Hexagonal] | http://acc.technologe.at/expert/09[Hexagonal]
+| 10 	| http://acc.technologe.at/junior/10[Darstellung] | http://acc.technologe.at/intermediate/10[Darstellung] | http://acc.technologe.at/expert/10[Darstellung]
 |===
