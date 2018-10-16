@@ -1,0 +1,11 @@
+= Advent Coding Contest 2017
+:toc:
+:toc-title:
+:toclevels: 3
+:nofooter:
+
+== Aufgabe 10 - Darstellung
+Das Ziel dieser Aufgabe besteht darin eine Welt aus dem Spiel des Lebens grafisch darzustellen. Dabei sollen alle Muster von einer Startgeneration, bis zu einer Endgeneration, mit ihrer jeweiligen Größe, Generation und ihrer aktivierten Regeln, tabellarisch angegeben werden.
+Die Darstellungen sollen hintereinander, mit einem Abstand von 0.5 Sekunden gezeigt werden, wobei es dem Benutzer möglich sein soll den Prozess vorübergehend anzuhalten.
+
+Die Darstellung soll über die Methode `displayPatterns(start, end)` aufgerufen werden können.

@@ -1,0 +1,10 @@
+= Advent Coding Contest 2017
+:toc:
+:toc-title:
+:toclevels: 3
+:nofooter:
+
+== Aufgabe 10 - Darstellung
+Das Ziel dieser Aufgabe besteht darin eine Welt aus dem Spiel des Lebens grafisch darzustellen. Dabei sollen jeweils Größe, Generation, Muster und aktivierte Regeln, in der tabellarischen Ansicht angegeben werden.
+
+Die Darstellung soll über die Methode `displayPattern()` aufgerufen werden können.

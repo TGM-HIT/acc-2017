@@ -1,0 +1,30 @@
+= Advent Coding Contest 2017
+:toc:
+:toc-title:
+:toclevels: 3
+:nofooter:
+
+== Aufgabe 7 - Kollaps
+Das Ziel dieser Aufgabe besteht darin eine Regel zu implementieren, welche in jeder Generation zu einer Wahrscheinlichkeit zu 5 Prozent
+
+* eine lebende Zelle und all ihre Nachbarn
+* eine seit 5 Generationen existieren Zelle
+
+in tote Zellen verwandelt.
+
+Die Regel soll über dem Namen "Kollaps" aktiviert oder deaktiviert werden können[1].
+
+=== Struktur
+Für diese Aufgabe sind 2 Raumschiffe zu finden, welche wie folgt zurückzugeben sind:
+[source, ruby]
+----
+glider;{anzahl-glider}$lwss;{anzahl-leicher-schiffe}$
+----
+
+Eine Definition der Raumschiffe findet sich im Wikipedia Eintrag des Spiels<<game-of-life-patterns>>.
+
+'''
+
+[bibliography]
+== Referenzen
+* [1] Siehe Aufgaben 1 - 3.

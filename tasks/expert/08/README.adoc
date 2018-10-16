@@ -1,0 +1,17 @@
+= Advent Coding Contest 2017
+:toc:
+:toc-title:
+:toclevels: 3
+:nofooter:
+
+== Aufgabe 8 - Torus
+Das Ziel dieser Aufgabe besteht darin die Welt als Torus zu implementieren. Zellen die sich an den Rand der Welt entwickeln würden, erscheinen stattdessen auf der gegenüberliegenden Seite wieder. Zellen auf dieser Seite zählen damit auch als Nachbarn.
+
+Die Anwendung könnte also wie folgt aussehen:
+[source, ruby]
+----
+0 0 0 1		0 0 1 1
+0 0 0 1	=>	1 0 1 1
+1 1 0 0		1 0 1 1
+0 0 0 1		1 0 1 1
+----

@@ -1,0 +1,24 @@
+= Advent Coding Contest 2017
+:toc:
+:toc-title:
+:toclevels: 3
+:nofooter:
+
+== Aufgabe 6 - Oszillierende Objekte
+Das Ziel dieser Aufgabe besteht darin ein Muster nach oszillierenden Objekten<<1>> zu filtern, und diese über die Funktion `getObjects()` zurückzuliefern.
+
+=== Struktur
+Für diese Aufgabe sind 3 Objekte zu finden, welche wie folgt zurückzugeben sind:
+[source, ruby]
+----
+blinker;{anzahl-blinker}$toads;{anzahl-toads}$beacons;{anzahl-beacons}$
+----
+
+Eine Definition der Objekte findet sich im Wikipedia Eintrag des Spiels<<game-of-life-patterns>>.
+
+'''
+
+[bibliography]
+== Referenzen
+* [1] **Oszillierende Objekte** beschreiben Zellkombinationen die sich in einer Schleife bewegen. Es kommt daher auf lange sich zu keiner Veränderung.
+* [game-of-life-patterns] https://wiki.sh/golp

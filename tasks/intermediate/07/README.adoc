@@ -1,0 +1,19 @@
+= Advent Coding Contest 2017
+:toc:
+:toc-title:
+:toclevels: 3
+:nofooter:
+
+== Aufgabe 7 - Fluktuation
+Das Ziel dieser Aufgabe besteht eine neue Regel zu implementieren, welche in jeder Generation zu einer Wahrscheinlichkeit zu 10 Prozent
+
+* eine tote Zelle ohne lebende Nachbarn zum Leben erweckt
+* eine lebende Zelle ohne lebende Nachbarn sterben lässt.
+
+Die Regel soll über dem Namen `"Fluktuation"` aktiviert oder deaktiviert werden können<<1>>.
+
+'''
+
+[bibliography]
+== Referenzen
+* [1] Siehe Aufgaben 1 - 3.

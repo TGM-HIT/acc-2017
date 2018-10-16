@@ -1,0 +1,28 @@
+= Advent Coding Contest 2017
+:toc:
+:toc-title:
+:toclevels: 3
+:nofooter:
+
+== Aufgabe 9 - Hexagonal
+Das Ziel dieser Aufgabe besteht darin hexagonale Welten zu unterstützen, welche durch ein zusätzliches `h` am Ende eines Pattern angegeben werden.
+
+Eine hexagonale Karte könnte also wie folgt aussehen:
+[source, ruby]
+----
+0 0 0 1 1 1
+ 1 1 1 0 0 0
+0 0 0 1 1 1
+ 1 1 1 0 0 0
+0 0 0 1 1 1
+ 1 1 1 0 0 0
+----
+
+Folgendes Muster kann zum Test verwendet werden:
+[source, ruby]
+----
+6;3;0;010101101010010101;h$
+6;3;1;001010101011001010;h$
+----
+
+Zur Berechnung der Folgegeneration sind die 3 Grundregeln zu verwenden.

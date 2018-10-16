@@ -1,0 +1,20 @@
+= Advent Coding Contest 2017
+:toc:
+:toc-title:
+:toclevels: 3
+:nofooter:
+
+== Aufgabe 8 - Skalierung
+Das Ziel dieser Aufgabe besteht darin die Welt zu vergrößern oder zu verkleinern. Die Funktion `resize(width, height)` soll die Welt auf die angegebenen Werte skalieren und nach rechts, beziehungsweise nach unten hin abschneiden.
+
+Die Anwendung könnte also wie folgt aussehen:
+[source, ruby]
+----
+6 x 6		=>	4 x 3
+0 0 0 1 1 1		0 1 0 0
+1 1 1 0 0 0     0 1 0 0
+0 0 0 1 1 1     0 1 0 0
+1 1 1 0 0 0
+0 0 0 1 1 1
+1 1 1 0 0 0
+----

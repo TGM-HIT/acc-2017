@@ -1,0 +1,18 @@
+= Advent Coding Contest 2017
+:toc:
+:toc-title:
+:toclevels: 3
+:nofooter:
+
+== Aufgabe 5 - Überleben
+Das Ziel dieser Aufgabe besteht darin ein Muster zu finden, welches mindestens `50` Generation überleben kann. Ein Muster gilt als **lebendig** solange sich die Anzahl der lebenden Zellen in der Folgegeneration verändert. Oszillierende Objekte werden zu diesem Zweck als tot angesehen<<1>>.
+
+Zur Berechnung der Folgegeneration werden standardmäßig alle drei Regeln verwendet.
+Jene 3 Muster die die meisten Generationen überleben, erhalten `+3`, `+2` oder `+1` Punkt(e).
+
+'''
+
+[bibliography]
+== Referenzen
+* [1] **Oszillierende Objekte** beschreiben Zellkombinationen die sich in einer Schleife bewegen. Es kommt daher auf lange sich zu keiner Veränderung.
+* [game-of-life] Wikipedia. Conways Spiel des Lebens. 2017. https://wiki.sh/gol.

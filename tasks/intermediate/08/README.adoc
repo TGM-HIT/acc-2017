@@ -1,0 +1,18 @@
+= Advent Coding Contest 2017
+:toc:
+:toc-title:
+:toclevels: 3
+:nofooter:
+
+== Aufgabe 8 - Automatische Skalierung
+Das Ziel dieser Aufgabe besteht darin die Welt dynamisch zu vergrößern oder zu verkleinern, sollten sich Zellen über den Rand der Welt hin entwickeln.
+
+Die Anwendung könnte also wie folgt aussehen:
+[source, ruby]
+----
+0 0 0 1		0 1 0 0
+1 1 1 0 =>  0 1 0 0
+0 0 0 1     0 1 0 1
+1 1 1 0     0 1 0 0
+		   |0 1 0 0|
+----

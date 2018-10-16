@@ -1,0 +1,24 @@
+= Advent Coding Contest 2017
+:toc:
+:toc-title:
+:toclevels: 3
+:nofooter:
+
+== Aufgabe 6 - Raumschiffe
+Das Ziel dieser Aufgabe besteht darin ein Muster nach sogenannten Raumschiffen<<1>> zu filtern, und diese über die Funktion `getObjects()` zurückzuliefern.
+
+=== Struktur
+Für diese Aufgabe sind 2 Raumschiffe zu finden, welche wie folgt zurückzugeben sind:
+[source, ruby]
+----
+glider;{anzahl-glider}$lwss;{anzahl-leicher-schiffe}$
+----
+
+Eine Definition der Raumschiffe findet sich im Wikipedia Eintrag des Spiels<<game-of-life-patterns>>.
+
+'''
+
+[bibliography]
+== Referenzen
+* [1] **Raumschiffe** beschreiben Zellkombinationen die sich in einer Schleife bewegen und dabei laufend ihre Position ändern. Ihre Form bleibt dabei jedoch auf lange Sicht gleich.
+* [game-of-life-patterns] https://wiki.sh/golp

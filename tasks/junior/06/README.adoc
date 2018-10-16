@@ -1,0 +1,24 @@
+= Advent Coding Contest 2017
+:toc:
+:toc-title:
+:toclevels: 3
+:nofooter:
+
+== Aufgabe 6 - Statische Objekte
+Das Ziel dieser Aufgabe besteht darin ein Muster nach statischen Objekten<<1>> zu filtern, und diese über die Funktion `getObjects()` zurückzuliefern.
+
+=== Struktur
+Für diese Aufgabe sind 3 statische Objekte zu finden, welche wie folgt zurückzugeben sind:
+[source, ruby]
+----
+block;{anzahl-blöcke}$beehive;{anzahl-bienenstöcke}$boat;{anzahl-boote}$
+----
+
+Eine Definition der statischen Objekte findet sich im Wikipedia Eintrag des Spiels<<game-of-life-patterns>>.
+
+'''
+
+[bibliography]
+== Referenzen
+* [1] **Statische Objekte** beschreiben Zellkombinationen, welche Ähnlichkeit mit bestimmten Objekten in der Realität aufweisen.
+* [game-of-life-patterns] https://wiki.sh/golp

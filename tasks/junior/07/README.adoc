@@ -1,0 +1,23 @@
+= Advent Coding Contest 2017
+:toc:
+:toc-title:
+:toclevels: 3
+:nofooter:
+
+== Aufgabe 7 - Stichproben
+Das Ziel dieser Aufgabe besteht darin einen Teil eines Musters auf Lebende Zellen zu analysieren. Die Funktion `countCells(x, y, w, h)` soll die Anzahl der Zellen in einem Bereich als Integer zurückliefern. `x` entspricht dabei der horizontalen und `y` der vertikalen Position auf der Karte. Die Größe des Bereichs wird über die Parameter `w` (Breite) und `h` (Höhe) angegeben.
+
+Die Anwendung könnte also wie folgt aussehen:
+[source, ruby]
+----
+# Pattern
+# 0 0 0 1 1 1
+# 1 1|1 0 0|0
+# 0 0|0 1 1|1
+# 1 1|1 0 0|0
+# 0 0|0 1 1|1
+# 1 1 1 0 0 0
+
+>>> countCells(1, 2, 3, 4);
+>>> 6
+----
